@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CronometroDeUmaPausa</string>
+    <string name="pausa_mais_atividade">Nova atividade</string>
+    <string name="dialogo_pausa_botao_nao">Não</string>
+    <string name="dialogo_pausa_botao_sim">Sim</string>
+    <string name="dialogo_pausa_texto">Deseja salvar as alterações?</string>
+    <string name="dialogo_deletar_pausa_atividade">Deseja excluir esta atividade?</string>
+    <string name="de_uma_pausa_text_tempo_atividade">Tempo de atividade:</string>
+    <string name="de_uma_pausa_text_tempo_pausa">Tempo de pausa:</string>
+    <string name="pausa_hint_nome">Nome da atividade</string>
+    <string name="botao_comecar">Começar</string>
+    <string name="dialogo_pausa_botao_voltar">Voltar para a atividade</string>
+</resources>

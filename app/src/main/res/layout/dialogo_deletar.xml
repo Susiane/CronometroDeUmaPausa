@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/deseja_deletar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogo_pausa_texto"
+        android:textAlignment="center"
+        android:textColor="#66CCCC"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_botoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deseja_deletar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/dialogo_nao_deletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#cccccc"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/dialogo_pausa_botao_nao"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/dialogo_sim_deletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#66cccc"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/dialogo_pausa_botao_sim"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

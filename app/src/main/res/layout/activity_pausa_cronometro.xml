@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.labproject.cronometrodeumapausa.activities.PausaCronometroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6699"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nome_atividade_crono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ffb2cc"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:id="@+id/fundo_cronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pausa_circulo"/>
+
+        <TextView
+            android:id="@+id/cronometro_pausa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/botaoPausar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/cronometro_pausa"
+            android:text="Parar"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/textTempoAtividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fundo_cronometro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/de_uma_pausa_text_tempo_atividade"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarTempoAtividadeCrono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTempoAtividade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:theme="@style/AtividadeSeek"
+            android:enabled="true"
+            android:max="60"
+            />
+
+        <TextView
+            android:id="@+id/minutosAtividadeCrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarTempoAtividadeCrono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:text="10min"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textTempoPausaCrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/minutosAtividadeCrono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/de_uma_pausa_text_tempo_pausa"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarTempoPausaCrono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTempoPausaCrono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:theme="@style/PausaSeek"
+            android:enabled="true"
+            android:max="60"/>
+
+        <TextView
+            android:id="@+id/minutosPausaCrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarTempoPausaCrono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:text="10min"
+            android:textColor="#666666"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#66cccc"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    </LinearLayout>
+</LinearLayout>

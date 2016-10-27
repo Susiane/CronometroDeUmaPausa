@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/deseja_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogo_pausa_texto"
+        android:textAlignment="center"
+        android:textColor="#66CCCC"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_botoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deseja_salvar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/pausa_dialogo_nao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#cccccc"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/dialogo_pausa_botao_nao"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/pausa_dialogo_sim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#66cccc"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/dialogo_pausa_botao_sim"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/botao_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_botoes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:text="@string/dialogo_pausa_botao_voltar"
+        android:textAlignment="center"
+        android:textColor="#ff6a6a"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
